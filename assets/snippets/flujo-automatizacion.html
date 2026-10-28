@@ -1,0 +1,53 @@
+<!-- Flujo de automatización estilo Make (guardado para usar más adelante). Va dentro de .cell-auto; los estilos .flow-* siguen en style.css -->
+            <div class="flow-wrap">
+              <svg class="flow" viewBox="0 0 760 300" role="img" aria-label="Ejemplo de flujo: llega un lead de Meta, se guarda en HubSpot, recibe un WhatsApp al instante y, dos días después, una secuencia de emails en Mailchimp.">
+                <g class="flow-lines">
+                  <path id="fl1" d="M124 150 L236 150"/>
+                  <path id="fl2" d="M304 150 L386 150"/>
+                  <path id="fl3" d="M414 150 C470 150 480 70 526 70"/>
+                  <path id="fl4" d="M414 150 C450 150 458 230 486 230"/>
+                  <path id="fl5" d="M554 230 L646 230"/>
+                </g>
+
+                <g class="flow-pulses">
+                  <circle r="5"><animateMotion dur="4s" begin="0s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.22;1" calcMode="linear"><mpath href="#fl1"/></animateMotion><animate attributeName="opacity" dur="4s" begin="0s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;.02;.2;.23;1"/></circle>
+                  <circle r="5"><animateMotion dur="4s" begin="1s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.18;1" calcMode="linear"><mpath href="#fl2"/></animateMotion><animate attributeName="opacity" dur="4s" begin="1s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;.02;.16;.19;1"/></circle>
+                  <circle r="5"><animateMotion dur="4s" begin="1.8s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.22;1" calcMode="linear"><mpath href="#fl3"/></animateMotion><animate attributeName="opacity" dur="4s" begin="1.8s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;.02;.2;.23;1"/></circle>
+                  <circle r="5"><animateMotion dur="4s" begin="1.8s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.22;1" calcMode="linear"><mpath href="#fl4"/></animateMotion><animate attributeName="opacity" dur="4s" begin="1.8s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;.02;.2;.23;1"/></circle>
+                  <circle r="5"><animateMotion dur="4s" begin="2.9s" repeatCount="indefinite" keyPoints="0;1;1" keyTimes="0;.2;1" calcMode="linear"><mpath href="#fl5"/></animateMotion><animate attributeName="opacity" dur="4s" begin="2.9s" repeatCount="indefinite" values="0;1;1;0;0" keyTimes="0;.02;.18;.21;1"/></circle>
+                </g>
+
+                <g class="flow-node">
+                  <circle cx="90" cy="150" r="34" fill="#0467DF"/>
+                  <image href="assets/logos/meta.svg" x="72" y="132" width="36" height="36"/>
+                  <text x="90" y="210">Nuevo lead</text>
+                  <text x="90" y="228" class="flow-sub">Meta Lead Ads</text>
+                </g>
+                <g class="flow-node">
+                  <circle cx="270" cy="150" r="34" fill="#FF7A59"/>
+                  <image href="assets/logos/hubspot.svg" x="253" y="133" width="34" height="34"/>
+                  <text x="270" y="210">Se guarda en el CRM</text>
+                  <text x="270" y="228" class="flow-sub">HubSpot</text>
+                </g>
+                <g class="flow-router">
+                  <circle cx="400" cy="150" r="14"/>
+                  <circle cx="400" cy="150" r="4" class="flow-router-dot"/>
+                </g>
+                <g class="flow-node">
+                  <circle cx="560" cy="70" r="34" fill="#25D366"/>
+                  <image href="assets/logos/whatsapp.svg" x="543" y="53" width="34" height="34"/>
+                  <text x="606" y="66" class="flow-side">Mensaje al instante</text>
+                  <text x="606" y="84" class="flow-sub flow-side">WhatsApp</text>
+                </g>
+                <g class="flow-node">
+                  <circle cx="520" cy="230" r="34" class="flow-wait"/>
+                  <svg x="500" y="210" width="40" height="40" viewBox="0 0 256 256"><path class="flow-clock" d="M128,24A104,104,0,1,0,232,128,104.11,104.11,0,0,0,128,24Zm0,192a88,88,0,1,1,88-88A88.1,88.1,0,0,1,128,216Zm64-88a8,8,0,0,1-8,8H128a8,8,0,0,1-8-8V72a8,8,0,0,1,16,0v48h48A8,8,0,0,1,192,128Z"/></svg>
+                  <text x="520" y="290">Espera 2 días</text>
+                </g>
+                <g class="flow-node">
+                  <circle cx="680" cy="230" r="34" fill="#FFE01B"/>
+                  <image href="assets/logos/mailchimp.svg" x="663" y="213" width="34" height="34" class="flow-dark"/>
+                  <text x="680" y="290">Secuencia de emails</text>
+                </g>
+              </svg>
+            </div>
